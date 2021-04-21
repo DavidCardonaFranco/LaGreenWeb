@@ -1,0 +1,93 @@
+<!-- Botón básico.
+ el "btn-__" representa un color predeterminado-->
+<H1 class="red">Botones con colores predeterminados</H1>
+ <button type="button" class="btn btn-primary">Primary</button>
+ <button type="button" class="btn btn-secondary">Secondary</button>
+ <button type="button" class="btn btn-success">Success</button>
+ <button type="button" class="btn btn-danger">Danger</button>
+ <button type="button" class="btn btn-warning">Warning</button>
+ <button type="button" class="btn btn-info">Info</button>
+ <button type="button" class="btn btn-dark">Dark</button>
+
+
+<!-- Botones sin fondo, logrando realtar el contorno y el texto
+el "btn-outline" logra remarcar las líneas de contorno
+y el "data-mdb-ripple-color="dark" hace que al momento de dar click, la onda muestra un contorno negro-->
+
+<br>
+<H1>Botones sin fondo y con colores predeterminados</H1>
+<button type="button" class="btn btn-outline-primary" data-mdb-ripple-color="dark">Primary</button>
+<button type="button" class="btn btn-outline-secondary" data-mdb-ripple-color="dark">Secondary</button>
+<button type="button" class="btn btn-outline-success" data-mdb-ripple-color="dark">Success</button>
+<button type="button" class="btn btn-outline-danger" data-mdb-ripple-color="dark">Danger</button>
+<button type="button" class="btn btn-outline-warning" data-mdb-ripple-color="dark">Warning</button>
+<button type="button" class="btn btn-outline-info" data-mdb-ripple-color="dark">Info</button>
+<button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark">Light</button>
+<button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Dark</button>
+
+<!-- Botones con fondo y forma ovalada
+ se obtiene "btn-rounded" que permite que se obtenga una forma ovalada-->
+<br>
+<H1>Botones con forma ovalada</H1>
+<button type="button" class="btn btn-primary btn-rounded">Primary</button>
+<button type="button" class="btn btn-secondary btn-rounded">Secondary</button>
+<button type="button" class="btn btn-success btn-rounded">Success</button>
+<button type="button" class="btn btn-danger btn-rounded">Danger</button>
+<button type="button" class="btn btn-warning btn-rounded">Warning</button>
+<button type="button" class="btn btn-info btn-rounded">Info</button>
+<button type="button" class="btn btn-light btn-rounded">Light</button>
+<button type="button" class="btn btn-dark btn-rounded">Dark</button>
+
+<!-- Botones con fondo y circulares
+con el "btn-floating" se puede obtener la forma circular, pero con un espacio reducido
+por lo que en estos casos, se usará el link de los iconos : https://mdbootstrap.com/docs/standard/content-styles/icons/
+y también se le podrá añadir las características btn que hemos venido trabajando.
+Pero antes se deberá de instalar los iconos del MD-B "npm i bootstrap-icons" y agragar dentro del JSON en los estilos
+"node_modules/bootstrap-icons/font/bootstrap-icons.css"
+-->
+<br>
+<h1>Botones con forma circular tipo (icono)</h1>
+<button type="button" class="btn btn-primary btn-floating">
+  <i class="fas fa-download"></i>
+</button>
+<button type="button" class="btn btn-outline-success btn-floating" data-mdb-ripple-color="dark">
+  <i class="fas fa-star"></i>
+</button>
+<button type="button" class="btn btn-danger btn-floating">
+  <i class="fas fa-magic"></i>
+</button>
+<button type="button" class="btn btn-dark btn-floating">
+  <i class="fab fa-apple"></i>
+</button>
+
+<!-- Tamaño de los botones
+Si se desea un botón más pequeño "btn-sm"
+Si se desea un botón normal se dejaría sin ninguna mención
+Si se desea un botón más grande "btn-lg"-->
+<br>
+<h1>Establecer los tamaños</h1>
+<button type="button" class="btn btn-primary btn-sm">Button</button>
+<button type="button" class="btn btn-primary">Button</button>
+<button type="button" class="btn btn-primary btn-lg">Button</button>
+
+<!-- Botón deshabilitado
+No se podrá utilizar hasta que se cambie con funciones (click) se puede deshabilitar con "disabled" -->
+<br>
+<h1>Botón deshabilitado</h1>
+<button type="button" class="btn btn-primary btn-lg" disabled>Primary button</button>
+<button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+
+<!-- Botones que cubren toda la pantalla y aún así cumplen con las funciones del botón
+se obtiene con "d-grid gap-2" -->
+<br>
+<h1>Botones que cubren toda la pantalla</h1>
+<div class="d-grid gap-2">
+  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-primary" type="button">Button</button>
+</div>
+
+<!-- Botones intercativos
+  data-mdb-toggle="button" : se utiliza para que cada vez que se da click en el botón, se activa el color -->
+<br>
+<h1>Botones activados y desactivados</h1>
+<button type="button" class="btn btn-primary active" data-mdb-toggle="button" autocomplete="off" aria-pressed="true">ON/OFF</button>
